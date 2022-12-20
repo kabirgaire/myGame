@@ -7,8 +7,10 @@ void back(){
   int s = ((int)millis())/1000;
   
   if( s == i ){
-    c = color( ((int)random(0,255)) , ((int)random(0,255)) , ((int)random(0,255)) );
+    c = color( ((int)random(0,255)) , 
+               ((int)random(0,255)) , ((int)random(0,255)) );
     i=i+colorDurationInSeconds;
   }
   
+
 }

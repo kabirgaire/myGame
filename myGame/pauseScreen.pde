@@ -15,7 +15,9 @@ void pause(){
   fill(0, 408, 612, 816);
   
   text("Continue", pauseRect_Xpos + (pauseRect_Xsize/2) ,
-                               pauseRect_Ypos + (pauseRect_Ysize/2) );
+                   pauseRect_Ypos + (pauseRect_Ysize/2) );
   textAlign(LEFT);
+
+  
   
 }

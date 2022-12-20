@@ -1,7 +1,6 @@
 void keyPressed(){
   switch( key ) {
     
-    
     case ' ': case 'w' : b.jump();//キー割り当て
     intro=false;//キーを押すとintroがtrueからfalseになり
                 //falseになったらbirdクラスのjumpが動く
@@ -9,29 +8,27 @@ void keyPressed(){
     if(end==false){ reset(); }
     break;
     
-  //
-  case 'e':b.invi();
+    case 'e': case 'E' : b.invi();
     isHit=false;
     if(end==false){
       reset();
     }
-  break;
+    break;
   
-  
-   case 'p': case 'P' : pause();
+    case 'p': case 'P' : pause();
     isHit=false;
     if(end==false){
       reset();
     }
-  break;
+    break;
   
-     case 'c': case 'C' : if(crossing){crossing=false;}else{crossing=true;};
+    // get x,y position cross on the screen
+    case 'c': case 'C' : if(crossing){crossing=false;}else{crossing=true;};
     isHit=false;
     if(end==false){
       reset();
     }
-  break;
+    break;
   
   }
-  //
 }

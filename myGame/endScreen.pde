@@ -22,7 +22,7 @@
   
   //playtime counting
   text("プレイタイム", width/2-100, 380);
-  text(  (int)millis()/1000, width/2+80, 380);
+  text(  playTime, width/2+80, 380);
   
    // click to restart button
   fill(255);
