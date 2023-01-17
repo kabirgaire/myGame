@@ -1,17 +1,24 @@
 void keyPressed(){
   switch( key ) {
     
-    case ' ': case 'w' : b.jump();//キー割り当て
+    case ' ' : b.jump();//キー割り当て
     intro=false;//キーを押すとintroがtrueからfalseになり
                 //falseになったらbirdクラスのjumpが動く
      //停止状態
-    if(end==false){ reset(); }
+    if(end==false){ 
+      reset();
+      base_time = millis();
+      click = 1;
+      loop();
+    }
     break;
     
     case 'e': case 'E' : b.invi();
     isHit=false;
     if(end==false){
       reset();
+      base_time = millis();
+      loop();
     }
     break;
   

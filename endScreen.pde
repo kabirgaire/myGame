@@ -22,7 +22,11 @@
   
   //playtime counting
   text("プレイタイム", width/2-100, 380);
-  text(  playTime, width/2+80, 380);
+  int time = millis() - base_time;
+  text(time/1000, width/2+80, 380);
+  text("ジャンプ回数", width/2-100, 410);
+  text(click, width/2+80, 410);
+  noLoop();
   
    // click to restart button
   fill(255);

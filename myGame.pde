@@ -5,6 +5,8 @@ import java.util.ArrayList;
 int i = 0 ,  score=0 , count = 0;     color c, colorDurationInSeconds=5;
 int margin = 100,     textSize =15, buttomBoxColor =150, playTime = 0; 
 boolean lock = true;
+int base_time = 0;
+int click = 0;
 
 
 player b = new player();
